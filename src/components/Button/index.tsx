@@ -6,8 +6,9 @@ const Button = ({
   icon,
   size = "medium",
   fullWidth = false,
+  ...props
 }: ButtonProps) => (
-  <S.Wrapper size={size} fullWidth={fullWidth} hasIcon={!!icon}>
+  <S.Wrapper size={size} fullWidth={fullWidth} hasIcon={!!icon} {...props}>
     {!!icon && icon}
     {!!children && <span>{children}</span>}
   </S.Wrapper>
