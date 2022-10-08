@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> Should render the medium size by default 1`] = `
+<button
+  class="sc-bcXHqe sXlZP"
+>
+  <span>
+    Buy Now
+  </span>
+</button>
+`;
