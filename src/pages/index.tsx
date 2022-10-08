@@ -1,5 +1,12 @@
-import Logo from "src/components/Logo";
+import Button from "src/components/Button";
+import MediaMatch from "src/components/MediaMatch";
 
 export default function Home() {
-  return <Logo color="black" hideOnMobile={true} />;
+  return (
+    <>
+      <MediaMatch greaterThan="small">Desktop</MediaMatch>
+      <MediaMatch lessThan="small">Mobile</MediaMatch>
+      <Button size="large">OK</Button>
+    </>
+  );
 }
