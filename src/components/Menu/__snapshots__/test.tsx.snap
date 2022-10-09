@@ -191,7 +191,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       class="sc-dkrFOg dybaQR"
     >
       <button
-        class="sc-bcXHqe kChgIN"
+        class="sc-bcXHqe kWxtXa"
       >
         <span>
           Sign in
@@ -241,7 +241,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       class="sc-jrcTuL hkCfnB"
     >
       <button
-        class="sc-bcXHqe eYYfhw"
+        class="sc-bcXHqe iMibYb"
       >
         <span>
           Log in now

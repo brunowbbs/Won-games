@@ -46,4 +46,19 @@ describe("<Button/>", () => {
       width: "100%",
     });
   });
+
+  it("Should render button has a link", () => {
+    const { debug, container } = renderWithTheme(
+      <Button as="a" href="/link">
+        Buy Now
+      </Button>
+    );
+
+    debug(container);
+
+    expect(screen.getByRole("link", { name: /Buy now/i })).toHaveAttribute(
+      "href",
+      "/link"
+    );
+  });
 });

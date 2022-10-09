@@ -2,7 +2,7 @@
 
 exports[`<Button/> Should render the medium size by default 1`] = `
 <button
-  class="sc-bcXHqe kChgIN"
+  class="sc-bcXHqe kWxtXa"
 >
   <span>
     Buy Now
