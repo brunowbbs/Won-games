@@ -2,35 +2,39 @@
 
 exports[`<Menu/> Should render the menu 1`] = `
 <main
-  class="sc-gswNZR eIArTO"
+  class="sc-hLBbgP dPwwbb"
 >
   <div
-    class="sc-eDvSVe hFnPhm"
-  >
-    <svg
-      aria-label="Open Menu"
-      fill="currentColor"
-      height="30"
-      stroke="currentColor"
-      stroke-width="0"
-      viewBox="0 0 24 24"
-      width="30"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-      <path
-        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-      />
-    </svg>
-  </div>
-  <div
-    class="sc-dkrFOg TXYDM"
+    class="sc-dkrFOg fsMhIv"
   >
     <div
-      class="sc-bcXHqe iBBjGk"
+      class="sc-gKPRtg hkfnof"
+    >
+      <svg
+        aria-label="Open Menu"
+        fill="currentColor"
+        height="30"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="30"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="sc-eDvSVe iQMoyo"
+  >
+    <div
+      class="sc-gswNZR cGfzGk"
       color="white"
     >
       <svg
@@ -117,10 +121,30 @@ exports[`<Menu/> Should render the menu 1`] = `
     </div>
   </div>
   <div
-    class="sc-hLBbgP iXyxdK"
+    class="sc-dkrFOg dybaQR"
   >
     <div
-      class="sc-eDvSVe hFnPhm"
+      class="sc-iBYQkv gnogdH"
+    >
+      <a
+        class="sc-ftTHYK joUpEa"
+        href="#"
+      >
+        Home
+      </a>
+      <a
+        class="sc-ftTHYK joUpEa"
+        href="#"
+      >
+        Explore
+      </a>
+    </div>
+  </div>
+  <div
+    class="sc-jSUZER jsPZfv"
+  >
+    <div
+      class="sc-gKPRtg hkfnof"
     >
       <svg
         aria-label="Search"
@@ -142,7 +166,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       </svg>
     </div>
     <div
-      class="sc-eDvSVe hFnPhm"
+      class="sc-gKPRtg hkfnof"
     >
       <svg
         aria-label="Open Shopping Cart"
@@ -163,6 +187,77 @@ exports[`<Menu/> Should render the menu 1`] = `
         />
       </svg>
     </div>
+    <div
+      class="sc-dkrFOg dybaQR"
+    >
+      <button
+        class="sc-bcXHqe kChgIN"
+      >
+        <span>
+          Sign in
+        </span>
+      </button>
+    </div>
   </div>
+  <nav
+    aria-hidden="true"
+    class="sc-pyfCe hDLxMi"
+  >
+    <svg
+      aria-label="Close Menu"
+      fill="currentColor"
+      height="30"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="30"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      />
+    </svg>
+    <div
+      class="sc-iBYQkv gnogdH"
+    >
+      <a
+        class="sc-ftTHYK joUpEa"
+        href="#"
+      >
+        Home
+      </a>
+      <a
+        class="sc-ftTHYK joUpEa"
+        href="#"
+      >
+        Explore
+      </a>
+    </div>
+    <div
+      class="sc-jrcTuL hkCfnB"
+    >
+      <button
+        class="sc-bcXHqe eYYfhw"
+      >
+        <span>
+          Log in now
+        </span>
+      </button>
+      <span>
+        or
+      </span>
+      <a
+        class="sc-kDvujY eXbmWL"
+        href="#"
+        title="Sign Up"
+      >
+        Sign Up
+      </a>
+    </div>
+  </nav>
 </main>
 `;
