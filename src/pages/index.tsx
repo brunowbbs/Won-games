@@ -1,16 +1,39 @@
-import GameCard from "src/components/GameCard";
-import { gameCardMock } from "src/mocks/gameCard";
+import { Settings } from "react-slick";
+import Slider from "src/components/Slider";
+import styled from "styled-components";
 
 export default function Home() {
+  const horizontalSettings: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const verticalSettings: Settings = {
+    vertical: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const Slide = styled.div`
+    background: gray;
+    width: 30rem;
+    padding: 10rem 0;
+    border: 0.1rem solid red;
+    color: white;
+    text-align: center;
+  `;
+
   return (
-    <div style={{ maxWidth: "30rem" }}>
-      <GameCard
-        {...gameCardMock}
-        favorite
-        ribbon="My Ribbon"
-        ribbonColor="secondary"
-        ribbonSize="small"
-      />
-    </div>
+    <Slider settings={verticalSettings}>
+      <Slide>1</Slide>
+      <Slide>2</Slide>
+      <Slide>3</Slide>
+    </Slider>
   );
 }
