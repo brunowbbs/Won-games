@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BannerSlider/> Should render with the dots 1`] = `
+<section
+  class="sc-gKPRtg iAQlAu"
+>
+  <main
+    class="sc-iBYQkv uLKON"
+  >
+    <div
+      class="slick-slider slick-vertical slick-initialized"
+      dir="ltr"
+    >
+      <div
+        class="slick-list"
+        style="height: 0px;"
+      >
+        <div
+          class="slick-track"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+        >
+          <div
+            aria-hidden="false"
+            class="slick-slide slick-active slick-current"
+            data-index="0"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                class="sc-gswNZR kkylTA"
+              >
+                <main
+                  class="sc-bcXHqe jcpYlC"
+                  color="primary"
+                >
+                  Bestselling
+                </main>
+                <div
+                  aria-label="Defy death 1"
+                  class="sc-dkrFOg gEZSzI"
+                  role="img"
+                  src="https://source.unsplash.com/user/willianjusten/1042x580"
+                />
+                <div
+                  class="sc-hLBbgP AffZy"
+                >
+                  <h2
+                    class="sc-eDvSVe DxYRH"
+                  >
+                    Defy death 1
+                  </h2>
+                  <h3
+                    class="sc-jSUZER qrXPF"
+                  >
+                    Play the new crashlands season
+                  </h3>
+                  <a
+                    class="sc-ftTHYK foTbOJ"
+                    href="/games/defy-death"
+                  >
+                    <span>
+                      Buy now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="1"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                class="sc-gswNZR kkylTA"
+              >
+                <div
+                  aria-label="Defy death 2"
+                  class="sc-dkrFOg iaXmEC"
+                  role="img"
+                  src="https://source.unsplash.com/user/willianjusten/1042x582"
+                />
+                <div
+                  class="sc-hLBbgP AffZy"
+                >
+                  <h2
+                    class="sc-eDvSVe DxYRH"
+                  >
+                    Defy death 2
+                  </h2>
+                  <h3
+                    class="sc-jSUZER qrXPF"
+                  >
+                    Play the new crashlands season
+                  </h3>
+                  <a
+                    class="sc-ftTHYK foTbOJ"
+                    href="/games/defy-death"
+                  >
+                    <span>
+                      Buy now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="2"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                class="sc-gswNZR kkylTA"
+              >
+                <div
+                  aria-label="Defy death 3"
+                  class="sc-dkrFOg PsLjt"
+                  role="img"
+                  src="https://source.unsplash.com/user/willianjusten/1042x581"
+                />
+                <div
+                  class="sc-hLBbgP AffZy"
+                >
+                  <h2
+                    class="sc-eDvSVe DxYRH"
+                  >
+                    Defy death 3
+                  </h2>
+                  <h3
+                    class="sc-jSUZER qrXPF"
+                  >
+                    Play the new crashlands season
+                  </h3>
+                  <a
+                    class="sc-ftTHYK foTbOJ"
+                    href="/games/defy-death"
+                  >
+                    <span>
+                      Buy now
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="slick-dots"
+        style="display: block;"
+      >
+        <li
+          class="slick-active"
+        >
+          <button>
+            1
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            2
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            3
+          </button>
+        </li>
+      </ul>
+    </div>
+  </main>
+</section>
+`;

@@ -1,5 +1,6 @@
 import { Settings } from "react-slick";
-import Slider from "src/components/Slider";
+import BannerSlider from "src/components/BannerSlider";
+import { bannerSliderMock } from "src/mocks/bannerSlider";
 import styled from "styled-components";
 
 export default function Home() {
@@ -30,10 +31,8 @@ export default function Home() {
   `;
 
   return (
-    <Slider settings={verticalSettings}>
-      <Slide>1</Slide>
-      <Slide>2</Slide>
-      <Slide>3</Slide>
-    </Slider>
+    <div style={{ maxWidth: "130rem", margin: "0 auto" }}>
+      <BannerSlider items={bannerSliderMock} />
+    </div>
   );
 }

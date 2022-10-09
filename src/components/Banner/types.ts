@@ -6,7 +6,7 @@ export type BannerProps = {
   subtitle: string;
   buttonLabel: string;
   buttonLink: string;
-  ribbon: React.ReactNode;
-  ribbonSize: RibbonSizes;
-  ribbonCollor: "primary" | "secondary";
+  ribbon?: React.ReactNode;
+  ribbonSize?: RibbonSizes;
+  ribbonCollor?: "primary" | "secondary";
 };
