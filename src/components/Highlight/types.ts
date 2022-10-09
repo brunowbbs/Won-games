@@ -5,4 +5,5 @@ export type HighlightProps = {
   buttonLabel: string;
   buttonLink: string;
   floatImage?: string;
+  alignment?: "right" | "left";
 };

@@ -1,9 +1,12 @@
 import { screen } from "@testing-library/react";
+import "jest-styled-components";
 
 import { renderWithTheme } from "../../utils/tests/helpers";
+import { highlightMock } from "../../mocks/highlight";
+
+import * as S from "./styles";
 
 import Highlight from ".";
-import { highlightMock } from "../../mocks/highlight";
 
 describe("<Highlight />", () => {
   it("should render headings and button", () => {
@@ -37,5 +40,33 @@ describe("<Highlight />", () => {
     expect(
       screen.getByRole("img", { name: highlightMock.title })
     ).toHaveAttribute("src", "/img/red-dead-float.png");
+  });
+
+  it("should render align right by default", () => {
+    const { container } = renderWithTheme(<Highlight {...highlightMock} />);
+
+    expect(container.firstChild).toHaveStyleRule(
+      "grid-template-areas",
+      /floatimage content/i
+    );
+
+    expect(container.firstChild).toHaveStyleRule("text-align", "right", {
+      modifier: `${S.Content}`,
+    });
+  });
+
+  it("should render align left by default", () => {
+    const { container } = renderWithTheme(
+      <Highlight {...highlightMock} alignment="left" />
+    );
+
+    expect(container.firstChild).toHaveStyleRule(
+      "grid-template-areas",
+      /content floatimage/i
+    );
+
+    expect(container.firstChild).toHaveStyleRule("text-align", "left", {
+      modifier: `${S.Content}`,
+    });
   });
 });
