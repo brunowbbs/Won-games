@@ -4,6 +4,7 @@ import {
   MdOutlineAddShoppingCart,
 } from "react-icons/md";
 import Button from "../Button";
+import Ribbon from "../Ribbon";
 import * as S from "./styles";
 import { GameCardProps } from "./types";
 
@@ -14,9 +15,17 @@ const GameCard = ({
   price,
   promotionalPrice,
   favorite = false,
+  ribbon,
+  ribbonColor = "primary",
+  ribbonSize = "normal",
   onFav,
 }: GameCardProps) => (
   <S.Wrapper>
+    {!!ribbon && (
+      <Ribbon color={ribbonColor} size={ribbonSize}>
+        {ribbon}
+      </Ribbon>
+    )}
     <S.ImageBox>
       <S.Image src={img} alt={title} />
     </S.ImageBox>

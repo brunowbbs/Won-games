@@ -4,7 +4,13 @@ import { gameCardMock } from "src/mocks/gameCard";
 export default function Home() {
   return (
     <div style={{ maxWidth: "30rem" }}>
-      <GameCard {...gameCardMock} favorite />
+      <GameCard
+        {...gameCardMock}
+        favorite
+        ribbon="My Ribbon"
+        ribbonColor="secondary"
+        ribbonSize="small"
+      />
     </div>
   );
 }
