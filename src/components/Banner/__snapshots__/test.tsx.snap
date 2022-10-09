@@ -2,24 +2,24 @@
 
 exports[`<Banner/> Should render correctly 1`] = `
 <div
-  class="sc-gswNZR cXLuYV"
+  class="sc-dkrFOg ceMuHe"
 >
   <div
     aria-label="Defy death"
-    class="sc-dkrFOg gEZSzI"
+    class="sc-hLBbgP iroKqw"
     role="img"
     src="https://source.unsplash.com/user/willianjusten/1042x580"
   />
   <div
-    class="sc-hLBbgP AffZy"
+    class="sc-eDvSVe kmYFIO"
   >
     <h2
-      class="sc-eDvSVe DxYRH"
+      class="sc-jSUZER jrYSWl"
     >
       Defy death
     </h2>
     <h3
-      class="sc-jSUZER qrXPF"
+      class="sc-gKPRtg hGHUMN"
     >
       Play the new CrashLand season
     </h3>
