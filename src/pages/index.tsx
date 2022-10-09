@@ -1,6 +1,10 @@
-import Highlight from "src/components/Highlight";
-import { highlightMock } from "src/mocks/highlight";
+import GameCard from "src/components/GameCard";
+import { gameCardMock } from "src/mocks/gameCard";
 
 export default function Home() {
-  return <Highlight {...highlightMock} />;
+  return (
+    <div style={{ maxWidth: "30rem" }}>
+      <GameCard {...gameCardMock} favorite />
+    </div>
+  );
 }
