@@ -1,6 +1,8 @@
 import { Settings } from "react-slick";
 import BannerSlider from "src/components/BannerSlider";
+import GameCardSlider from "src/components/GameCardSlider";
 import { bannerSliderMock } from "src/mocks/bannerSlider";
+import { gameCardsMock } from "src/mocks/gameCard";
 import styled from "styled-components";
 
 export default function Home() {
@@ -30,9 +32,5 @@ export default function Home() {
     text-align: center;
   `;
 
-  return (
-    <div style={{ maxWidth: "130rem", margin: "0 auto" }}>
-      <BannerSlider items={bannerSliderMock} />
-    </div>
-  );
+  return <GameCardSlider items={gameCardsMock} />;
 }
