@@ -2,13 +2,13 @@
 
 exports[`<Menu/> Should render the menu 1`] = `
 <main
-  class="sc-hLBbgP dPwwbb"
+  class="sc-hLBbgP inBSkx"
 >
   <div
     class="sc-dkrFOg fsMhIv"
   >
     <div
-      class="sc-gKPRtg hkfnof"
+      class="sc-gKPRtg dLTTFT"
     >
       <svg
         aria-label="Open Menu"
@@ -127,13 +127,13 @@ exports[`<Menu/> Should render the menu 1`] = `
       class="sc-iBYQkv gnogdH"
     >
       <a
-        class="sc-ftTHYK joUpEa"
+        class="sc-ftTHYK iWsLhg"
         href="#"
       >
         Home
       </a>
       <a
-        class="sc-ftTHYK joUpEa"
+        class="sc-ftTHYK iWsLhg"
         href="#"
       >
         Explore
@@ -144,7 +144,7 @@ exports[`<Menu/> Should render the menu 1`] = `
     class="sc-jSUZER jsPZfv"
   >
     <div
-      class="sc-gKPRtg hkfnof"
+      class="sc-gKPRtg dLTTFT"
     >
       <svg
         aria-label="Search"
@@ -166,7 +166,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gKPRtg hkfnof"
+      class="sc-gKPRtg dLTTFT"
     >
       <svg
         aria-label="Open Shopping Cart"
@@ -191,7 +191,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       class="sc-dkrFOg dybaQR"
     >
       <button
-        class="sc-bcXHqe kWxtXa"
+        class="sc-bcXHqe cPHagE"
       >
         <span>
           Sign in
@@ -225,13 +225,13 @@ exports[`<Menu/> Should render the menu 1`] = `
       class="sc-iBYQkv gnogdH"
     >
       <a
-        class="sc-ftTHYK joUpEa"
+        class="sc-ftTHYK iWsLhg"
         href="#"
       >
         Home
       </a>
       <a
-        class="sc-ftTHYK joUpEa"
+        class="sc-ftTHYK iWsLhg"
         href="#"
       >
         Explore

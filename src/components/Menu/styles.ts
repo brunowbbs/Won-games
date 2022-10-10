@@ -3,10 +3,9 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    background: rebeccapurple;
     display: flex;
     align-items: center;
-    padding: ${theme.spacings.xsmall};
+    padding: ${theme.spacings.xsmall} 0;
     position: relative;
     justify-content: space-between;
   `}
@@ -35,6 +34,7 @@ export const IconWrapper = styled.div`
     cursor: pointer;
     padding: ${theme.spacings.xxsmall} 0;
     margin-left: ${theme.spacings.xxsmall};
+    margin-right: ${theme.spacings.xxsmall};
   `}
 `;
 
@@ -50,6 +50,7 @@ export const MenuNav = styled.div`
 export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
+
     color: ${theme.colors.white};
     font-size: ${theme.font.sizes.medium};
     margin: 0.3rem ${theme.spacings.small} 0;

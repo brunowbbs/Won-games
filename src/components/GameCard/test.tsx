@@ -1,9 +1,10 @@
 import { fireEvent, screen } from "@testing-library/react";
-import { gameCardMock } from "../../mocks/gameCard";
+
 import { renderWithTheme } from "../../utils/tests/helpers";
 
 import GameCard from ".";
 import theme from "../../styles/theme";
+import { gameCardMock, gameCardsMock } from "./mock";
 
 describe("<GameCard/>", () => {
   it("Should render correctly", () => {

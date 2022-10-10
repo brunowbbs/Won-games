@@ -1,10 +1,10 @@
 import "../../../.jest/match-media-mock";
 
-import { bannerSliderMock } from "../../mocks/bannerSlider";
 import { renderWithTheme } from "../../utils/tests/helpers";
 
 import BannerSlider from ".";
 import { screen } from "@testing-library/react";
+import { bannerSliderMock } from "./mock";
 
 describe("<BannerSlider/>", () => {
   it("Should render vertical slider", () => {

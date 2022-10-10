@@ -2,7 +2,7 @@ import { screen } from "@testing-library/react";
 import "jest-styled-components";
 
 import { renderWithTheme } from "../../utils/tests/helpers";
-import { highlightMock } from "../../mocks/highlight";
+import { highlightMock } from "./mock";
 
 import * as S from "./styles";
 

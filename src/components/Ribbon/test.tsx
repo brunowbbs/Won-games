@@ -3,7 +3,7 @@ import { renderWithTheme } from "../../utils/tests/helpers";
 
 import Ribbon from ".";
 import Banner from "../Banner";
-import { bannerMock } from "../../mocks/banner";
+import { bannerMock } from "../Banner/mock";
 
 describe("<Ribbon/>", () => {
   it("Should render the text correctly", () => {

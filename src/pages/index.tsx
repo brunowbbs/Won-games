@@ -1,36 +1,50 @@
-import { Settings } from "react-slick";
-import BannerSlider from "src/components/BannerSlider";
-import GameCardSlider from "src/components/GameCardSlider";
-import { bannerSliderMock } from "src/mocks/bannerSlider";
-import { gameCardsMock } from "src/mocks/gameCard";
-import styled from "styled-components";
+import { bannersMock } from "src/components/Banner/mock";
+import { gameCardsMock } from "src/components/GameCard/mock";
+import { highlightMock } from "src/components/Highlight/mock";
+import { HomeTemplateProps } from "src/templates/Home/types";
+import Home from "../templates/Home";
 
-export default function Home() {
-  const horizontalSettings: Settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  const verticalSettings: Settings = {
-    vertical: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  const Slide = styled.div`
-    background: gray;
-    width: 30rem;
-    padding: 10rem 0;
-    border: 0.1rem solid red;
-    color: white;
-    text-align: center;
-  `;
-
-  return <GameCardSlider items={gameCardsMock} />;
+export default function Index(props: HomeTemplateProps) {
+  return <Home {...props} />;
 }
+
+//ATENÇÃO
+//Os métodos getStaticProps/getServerSideProps SÓ FUNCIONAM EM PAGES
+
+//Static => gerar statico em build time
+export function getStaticProps() {
+  //faz a lógica
+  //pode ser buscar dados numa API
+  //fazer cálculo|leitura de context
+
+  //retorna os dados
+  return {
+    props: {
+      banners: bannersMock,
+      newGames: gameCardsMock,
+      mostPopularHighlight: highlightMock,
+      mostPopularGames: gameCardsMock,
+      upCommingGames: gameCardsMock,
+      upCommingMoreGames: gameCardsMock,
+      upCommingHighlight: highlightMock,
+      freeGames: gameCardsMock,
+      freeHighlight: highlightMock,
+    },
+  };
+}
+
+//ServerSide => gerar via ssr a cada requestgerar via ssr a cada request
+/*export function getServerSideProps() {
+  //faz a lógica
+  //pode ser buscar dados numa API
+  //fazer cálculo|leitura de context
+
+  //retorna os dados
+  return {
+    props: {
+      heading: "Olha eu aqui!",
+    },
+  };
+}*/
+
+//getInitialProps => gerar via ssr a cada request (mesma coisa dos outros (porem antes utilizava-se esse))

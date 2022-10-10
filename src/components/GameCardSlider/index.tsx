@@ -6,9 +6,6 @@ import Slider from "../Slider";
 import * as S from "./styles";
 import { GameCardSliderProps } from "./types";
 
-const NextArrow = () => <MdArrowForwardIos aria-label="previous games" />;
-const PrevArrow = () => <MdArrowBackIos aria-label="next games" />;
-
 const settings: Settings = {
   arrows: true,
   slidesToShow: 4,
@@ -44,8 +41,8 @@ const settings: Settings = {
       },
     },
   ],
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
+  nextArrow: <MdArrowForwardIos aria-label="previous games" />,
+  prevArrow: <MdArrowBackIos aria-label="next games" />,
 };
 
 const GameCardSlider = ({ items, color = "black" }: GameCardSliderProps) => (
