@@ -8,7 +8,8 @@
     "testw": "jest --watchAll",
     "testc": "jest --coverage",
     "testcw": "jest --coverage --watchAll",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "next": "latest",

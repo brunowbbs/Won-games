@@ -1,6 +1,7 @@
 import { screen } from "@testing-library/react";
 import { renderWithTheme } from "../../utils/tests/helpers";
 import { FaBeer } from "react-icons/fa";
+import "jest-styled-components";
 
 import Button from ".";
 
@@ -48,7 +49,7 @@ describe("<Button/>", () => {
   });
 
   it("Should render button has a link", () => {
-    const { debug, container } = renderWithTheme(
+    renderWithTheme(
       <Button as="a" href="/link">
         Buy Now
       </Button>
@@ -57,6 +58,25 @@ describe("<Button/>", () => {
     expect(screen.getByRole("link", { name: /Buy now/i })).toHaveAttribute(
       "href",
       "/link"
+    );
+  });
+
+  it("Should render a minimal version", () => {
+    renderWithTheme(
+      <Button size="small" minimal>
+        Buy Now
+      </Button>
+    );
+
+    expect(screen.getByRole("button", { name: /buy now/i })).toHaveStyle({
+      backgroundColor: "none",
+      color: "#F231A5",
+    });
+
+    expect(screen.getByRole("button", { name: /buy now/i })).toHaveStyleRule(
+      "background",
+      "none",
+      { modifier: ":hover" }
     );
   });
 });
