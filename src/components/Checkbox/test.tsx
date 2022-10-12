@@ -1,11 +1,13 @@
-import { screen, render, waitFor, fireEvent } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { renderWithTheme } from "../../utils/tests/helpers";
 import Checkbox from ".";
+import { renderWithTheme } from "../../utils/tests/helpers";
 
 describe("<Checkbox", () => {
   it("Should render with label", () => {
-    renderWithTheme(<Checkbox label="checkbox label" labelFor="check" />);
+    const { container } = renderWithTheme(
+      <Checkbox label="checkbox label" labelFor="check" />
+    );
 
     expect(
       screen.getByRole("checkbox", { name: /checkbox label/i })
@@ -14,6 +16,7 @@ describe("<Checkbox", () => {
     expect(screen.getByLabelText(/checkbox label/i)).toBeInTheDocument();
 
     expect(screen.getByText(/checkbox label/i)).toHaveAttribute("for", "check");
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it("Should render without label", () => {

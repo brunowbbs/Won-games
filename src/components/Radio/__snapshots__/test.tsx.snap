@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> should render with label (white) 1`] = `
+<div
+  class="sc-bcXHqe fMfVNB"
+>
+  <input
+    class="sc-gswNZR ckgvup"
+    id="check"
+    type="radio"
+    value="anyValue"
+  />
+  <label
+    class="sc-dkrFOg dYLDRq"
+    for="check"
+  >
+    Radio
+  </label>
+</div>
+`;
