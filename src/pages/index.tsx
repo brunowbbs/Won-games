@@ -21,6 +21,7 @@ export default function Index(props: HomeTemplateProps) {
         placeholder="jonh.cage@gmail.com"
         icon={<MdMailOutline />}
         disabled
+        error="asdasdas"
       />
     </>
   );

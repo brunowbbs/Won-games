@@ -8,4 +8,5 @@ export type TextFieldProps = {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   disabled?: boolean;
+  error?: string;
 } & InputHTMLAttributes<HTMLInputElement>;
