@@ -31,10 +31,7 @@ describe("<Home/>", () => {
   });
 
   it("Should render sections", () => {
-    const { debug, container } = renderWithTheme(<Home {...props} />);
-
-    debug(container);
-
+    renderWithTheme(<Home {...props} />);
     expect(screen.getByRole("heading", { name: /news/i })).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: /most popular/i })
