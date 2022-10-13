@@ -21,39 +21,56 @@ const props = {
   freeHighlight: highlightMock,
 };
 
+jest.mock("../../components/Menu", () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Menu"></div>;
+    },
+  };
+});
+
+jest.mock("../../components/Footer", () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Footer"></div>;
+    },
+  };
+});
+
+jest.mock("../../components/ShowCase", () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock ShowCase"></div>;
+    },
+  };
+});
+
+jest.mock("../../components/BannerSlider", () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock BannerSlider"></div>;
+    },
+  };
+});
+
 describe("<Home/>", () => {
   it("Should render menu and footer", () => {
     renderWithTheme(<Home {...props} />);
-    expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /contact/i })
-    ).toBeInTheDocument();
-  });
 
-  it("Should render sections", () => {
-    renderWithTheme(<Home {...props} />);
-    expect(screen.getByRole("heading", { name: /news/i })).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /most popular/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /Upcomming/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /free games/i })
-    ).toBeInTheDocument();
-  });
+    //Menu
+    expect(screen.getByTestId("Mock Menu")).toBeInTheDocument();
 
-  it("Should render section elements", () => {
-    renderWithTheme(<Home {...props} />);
-    //banner
-    expect(screen.getAllByText(/defy death 1/i)).toHaveLength(1);
+    //BannerSlider
+    expect(screen.getByTestId("Mock BannerSlider")).toBeInTheDocument();
 
-    //card game (5 sections com 4 cards cada 5 * 4 )
-    //expect(screen.getAllByAltText(/population zero/)).toHaveLength(20);
-    expect(screen.getAllByText(/population zero/i)).toHaveLength(5);
+    //Sections
+    expect(screen.getAllByTestId("Mock ShowCase")).toHaveLength(5);
 
-    //highlight (5 sections com 4 cards cada 5 * 4 )
-    //expect(screen.getAllByText(/read dead is back!/i)).toHaveLength(3);
+    //Footer
+    expect(screen.getByTestId("Mock Footer")).toBeInTheDocument();
   });
 });
