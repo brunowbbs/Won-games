@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { renderWithTheme } from "../../utils/tests/helpers";
 
 import TextField from ".";
-import { MdMailOutline } from "react-icons/md";
+import { MdMailOutline, MdOutlineMailOutline } from "react-icons/md";
 
 describe("<TextField />", () => {
   it("Renders with Label", () => {
@@ -118,5 +118,20 @@ describe("<TextField />", () => {
     expect(document.body).toHaveFocus();
     userEvent.tab();
     expect(input).not.toHaveFocus();
+  });
+
+  it("Renders with error", () => {
+    const { container } = renderWithTheme(
+      <TextField
+        icon={<MdOutlineMailOutline data-testid="icon" />}
+        label="TextField"
+        labelFor="TextField"
+        error="Error message"
+      />
+    );
+
+    expect(screen.getByText("Error message")).toBeInTheDocument();
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
