@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { MdMenu, MdShoppingCart, MdSearch, MdClose } from "react-icons/md";
 import Button from "../Button";
@@ -47,7 +48,11 @@ const Menu = ({ userName }: MenuProps) => {
 
         {!userName && (
           <MediaMatch greaterThan="medium">
-            <Button size="small">Sign in</Button>
+            <Link href="/sign-in" passHref>
+              <Button as="a" size="small">
+                Sign in
+              </Button>
+            </Link>
           </MediaMatch>
         )}
       </S.MenuGroup>
@@ -71,13 +76,15 @@ const Menu = ({ userName }: MenuProps) => {
         </S.MenuNav>
         {!userName && (
           <S.RegisterBox>
-            <Button fullWidth size="large">
-              Log in now
-            </Button>
+            <Link href="/sign-in" passHref>
+              <Button fullWidth size="large">
+                Log in now
+              </Button>
+            </Link>
             <span>or</span>
-            <S.CreateAccount href="#" title="Sign Up">
-              Sign Up
-            </S.CreateAccount>
+            <Link href="/sign-in" passHref>
+              <S.CreateAccount>Sign Up</S.CreateAccount>
+            </Link>
           </S.RegisterBox>
         )}
       </S.MenuFull>

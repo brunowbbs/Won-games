@@ -1,30 +1,11 @@
-import { MdMailOutline } from "react-icons/md";
 import { bannersMock } from "src/components/Banner/mock";
-import Checkbox from "src/components/Checkbox";
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
-import TextField from "src/components/TextField";
 import { HomeTemplateProps } from "src/templates/Home/types";
 import Home from "../templates/Home";
 
-/*export default function Index(props: HomeTemplateProps) {
-  return <Home {...props} />;
-}*/
-
 export default function Index(props: HomeTemplateProps) {
-  return (
-    <>
-      <Checkbox label="Usuário é administrador?" name="category" isChecked />
-      <Checkbox label="Usuário é administrador?" name="category" />
-      <Checkbox label="Usuário é administrador?" name="category" />
-      <TextField
-        placeholder="jonh.cage@gmail.com"
-        icon={<MdMailOutline />}
-        disabled
-        error="asdasdas"
-      />
-    </>
-  );
+  return <Home {...props} />;
 }
 
 //ATENÇÃO
