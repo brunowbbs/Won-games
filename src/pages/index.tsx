@@ -1,11 +1,17 @@
 import { bannersMock } from "src/components/Banner/mock";
 import { gameCardsMock } from "src/components/GameCard/mock";
+import GameInfo from "src/components/GameInfo";
+import { gameInfoMock } from "src/components/GameInfo/mock";
 import { highlightMock } from "src/components/Highlight/mock";
 import { HomeTemplateProps } from "src/templates/Home/types";
 import Home from "../templates/Home";
 
+// export default function Index(props: HomeTemplateProps) {
+//   return <Home {...props} />;
+// }
+
 export default function Index(props: HomeTemplateProps) {
-  return <Home {...props} />;
+  return <GameInfo {...gameInfoMock} />;
 }
 
 //ATENÇÃO
