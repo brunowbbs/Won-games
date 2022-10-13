@@ -1,12 +1,10 @@
-import Footer from "../../components/Footer";
-import { Container } from "../../components/Container";
-import Menu from "../../components/Menu";
-import Heading from "../../components/Heading";
-import { HomeTemplateProps } from "./types";
 import BannerSlider from "../../components/BannerSlider";
-import GameCardSlider from "../../components/GameCardSlider";
-import Highlight from "../../components/Highlight";
+import { Container } from "../../components/Container";
+import Footer from "../../components/Footer";
+import Menu from "../../components/Menu";
+import { HomeTemplateProps } from "./types";
 
+import ShowCase from "../../components/ShowCase";
 import * as S from "./styles";
 
 const Home = ({
@@ -29,41 +27,29 @@ const Home = ({
     </Container>
 
     <S.SectionNews>
-      <Container>
-        <Heading lineLeft lineColor="secondary">
-          News
-        </Heading>
-
-        <GameCardSlider items={newGames} color="black" />
-      </Container>
+      <ShowCase title="News" games={newGames} />
     </S.SectionNews>
 
-    <Container>
-      <S.SectionMostPopular>
-        <Heading lineLeft lineColor="secondary">
-          Most Popular
-        </Heading>
-        <Highlight {...mostPopularHighlight} />
-        <GameCardSlider items={mostPopularGames} color="white" />
-      </S.SectionMostPopular>
+    <S.SectionMostPopular>
+      <ShowCase
+        title="Most Popular"
+        highlight={mostPopularHighlight}
+        games={mostPopularGames}
+      />
+    </S.SectionMostPopular>
 
-      <S.SectionUpcoming>
-        <Heading lineLeft lineColor="secondary">
-          Upcomming
-        </Heading>
-        <GameCardSlider items={upCommingGames} />
-        <Highlight {...upCommingHighlight} />
-        <GameCardSlider items={upCommingMoreGames} color="white" />
-      </S.SectionUpcoming>
+    <S.SectionUpcoming>
+      <ShowCase title="Upcomming" games={upCommingGames} />
+      <ShowCase highlight={upCommingHighlight} games={upCommingMoreGames} />
+    </S.SectionUpcoming>
 
-      <S.SectionFreeGames>
-        <Heading lineLeft lineColor="secondary">
-          Free games
-        </Heading>
-        <Highlight {...freeHighlight} />
-        <GameCardSlider items={freeGames} color="white" />
-      </S.SectionFreeGames>
-    </Container>
+    <S.SectionFreeGames>
+      <ShowCase
+        title="Free games"
+        highlight={freeHighlight}
+        games={freeGames}
+      />
+    </S.SectionFreeGames>
 
     <S.SectionFooter>
       <Container>

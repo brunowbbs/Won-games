@@ -124,7 +124,7 @@ exports[`<Menu/> Should render the menu 1`] = `
     class="sc-dkrFOg dybaQR"
   >
     <div
-      class="sc-iBYQkv gnogdH"
+      class="sc-iBYQkv dlYIof"
     >
       <a
         class="sc-ftTHYK iWsLhg"
@@ -190,13 +190,14 @@ exports[`<Menu/> Should render the menu 1`] = `
     <div
       class="sc-dkrFOg dybaQR"
     >
-      <button
+      <a
         class="sc-bcXHqe eDDEcu"
+        href="/sign-in"
       >
         <span>
           Sign in
         </span>
-      </button>
+      </a>
     </div>
   </div>
   <nav
@@ -222,7 +223,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       />
     </svg>
     <div
-      class="sc-iBYQkv gnogdH"
+      class="sc-iBYQkv dlYIof"
     >
       <a
         class="sc-ftTHYK iWsLhg"
@@ -242,6 +243,7 @@ exports[`<Menu/> Should render the menu 1`] = `
     >
       <button
         class="sc-bcXHqe PsMiZ"
+        href="/sign-in"
       >
         <span>
           Log in now
@@ -252,8 +254,7 @@ exports[`<Menu/> Should render the menu 1`] = `
       </span>
       <a
         class="sc-kDvujY eXbmWL"
-        href="#"
-        title="Sign Up"
+        href="/sign-in"
       >
         Sign Up
       </a>
