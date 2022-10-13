@@ -6,6 +6,7 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  collectCoverageFrom: ["!src/pages/**/*.ts"],
   moduleNameMapper: {
     "^@/components/(.*)$": "<rootDir>/components/$1",
     "^styled-components":

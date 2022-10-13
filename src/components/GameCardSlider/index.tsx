@@ -41,8 +41,8 @@ const settings: Settings = {
       },
     },
   ],
-  nextArrow: <MdArrowForwardIos aria-label="previous games" />,
-  prevArrow: <MdArrowBackIos aria-label="next games" />,
+  //nextArrow: <MdArrowForwardIos aria-label="previous games" />,
+  //prevArrow: <MdArrowBackIos aria-label="next games" />,
 };
 
 const GameCardSlider = ({ items, color = "black" }: GameCardSliderProps) => (
