@@ -1,5 +1,6 @@
 import { bannersMock } from "src/components/Banner/mock";
 import { gameCardsMock } from "src/components/GameCard/mock";
+import GameDetails from "src/components/GameDetails";
 import GameInfo from "src/components/GameInfo";
 import { gameInfoMock } from "src/components/GameInfo/mock";
 import { highlightMock } from "src/components/Highlight/mock";
@@ -11,7 +12,7 @@ import Home from "../templates/Home";
 // }
 
 export default function Index(props: HomeTemplateProps) {
-  return <GameInfo {...gameInfoMock} />;
+  return <GameDetails />;
 }
 
 //ATENÇÃO
