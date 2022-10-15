@@ -34,7 +34,6 @@ exports[`<FormSignUp /> should render text and link to sign in 1`] = `
         </div>
         <input
           class="sc-dkrFOg hHzmDI"
-          name="name"
           placeholder="Name"
           type="text"
           value=""
@@ -70,7 +69,6 @@ exports[`<FormSignUp /> should render text and link to sign in 1`] = `
         </div>
         <input
           class="sc-dkrFOg hHzmDI"
-          name="email"
           placeholder="Email"
           type="email"
           value=""
@@ -106,7 +104,6 @@ exports[`<FormSignUp /> should render text and link to sign in 1`] = `
         </div>
         <input
           class="sc-dkrFOg hHzmDI"
-          name="password"
           placeholder="Password"
           type="password"
           value=""
@@ -142,7 +139,6 @@ exports[`<FormSignUp /> should render text and link to sign in 1`] = `
         </div>
         <input
           class="sc-dkrFOg hHzmDI"
-          name="confirm-password"
           placeholder="Confirm password"
           type="confirm-password"
           value=""

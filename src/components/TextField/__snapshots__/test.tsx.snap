@@ -37,6 +37,7 @@ exports[`<TextField /> Renders with error 1`] = `
     </div>
     <input
       class="sc-gswNZR egUZWG"
+      id="TextField"
       type="text"
       value=""
     />
