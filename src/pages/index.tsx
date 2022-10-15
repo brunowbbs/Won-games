@@ -1,12 +1,22 @@
 import { bannersMock } from "src/components/Banner/mock";
+import Empty from "src/components/Empty";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
 import Home from "src/templates/Home";
 import { HomeTemplateProps } from "src/templates/Home/types";
 
-export default function Index(props: HomeTemplateProps) {
-  return <Home {...props} />;
+// export default function Index(props: HomeTemplateProps) {
+//   return <Home {...props} />;
+// }
+
+const props = {
+  title: "A simple title",
+  description: "A simple description",
+};
+
+export default function Index() {
+  return <Empty {...props} hasLink />;
 }
 
 //ATENÇÃO

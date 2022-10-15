@@ -8,7 +8,7 @@ import { highlightMock } from "../../components/Highlight/mock";
 
 import Wishlist from ".";
 
-const props:WishListTemplateProps = {
+const props: WishListTemplateProps = {
   games: gameCardsMock,
   recommendedGames: gameCardsMock,
   recommendedHighlight: highlightMock,
@@ -23,12 +23,44 @@ jest.mock("../../components/ShowCase", () => ({
 
 describe("<Wishlist/>", () => {
   it("should render correctly", () => {
-    const { debug, container } = renderWithTheme(<Wishlist {...props} />);
+    renderWithTheme(<Wishlist {...props} />);
 
     expect(screen.getByTestId("Mock ShowCase")).toBeInTheDocument();
+
     expect(
-      screen.getByRole("heading", { name: /wishlist/i })
+      screen.getByRole("heading", { name: "Wishlist" })
     ).toBeInTheDocument();
+
     expect(screen.getAllByText(/population zero/i)).toHaveLength(6);
   });
+
+  it("should render empty when there are no games", () => {
+    renderWithTheme(
+      <Wishlist
+        recommendedGames={gameCardsMock}
+        recommendedHighlight={highlightMock}
+      />
+    );
+
+    expect(screen.queryByText(/population zero/i)).not.toBeInTheDocument();
+
+    expect(
+      screen.getByRole("heading", { name: /your wishlist is empty/i })
+    ).toBeInTheDocument();
+  });
 });
+
+/*  it("should render empty when there are no games", () => {
+    renderWithTheme(
+      <Wishlist
+        recommendedGames={gameCardsMock}
+        recommendedHighlight={highlightMock}
+      />
+    );
+
+    expect(screen.queryByTestId(/population zero/i)).not.toBeInTheDocument();
+
+    expect(
+      screen.getByRole("heading", { name: /Your wishlist is empty/i })
+    ).toBeInTheDocument();
+  });*/

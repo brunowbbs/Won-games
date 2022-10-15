@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Empty/> Should render correctly 1`] = `
+<div
+  class="sc-gswNZR icgcca"
+>
+  <img
+    alt="A gammer in a couch playing videogame"
+    class="sc-dkrFOg jwHEtL"
+    role="img"
+    src="img/empty.svg"
+  />
+  <h2
+    class="sc-hLBbgP lcWAtF"
+  >
+    A simple title
+  </h2>
+  <p
+    class="sc-eDvSVe dAcHZr"
+  >
+    A simple description
+  </p>
+  <a
+    class="sc-bcXHqe izgZbk"
+    href="/"
+  >
+    <span>
+      Go back to store
+    </span>
+  </a>
+</div>
+`;
