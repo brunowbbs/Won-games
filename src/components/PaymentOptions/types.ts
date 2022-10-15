@@ -1,10 +1,10 @@
-export type PaymentCart = {
+export type PaymentCard = {
   number: string;
   flag: string;
   img: string;
 };
 
 export type PaymentOptionsProps = {
-  cards?: PaymentCart[];
+  cards?: PaymentCard[];
   handlePayment: () => void;
 };

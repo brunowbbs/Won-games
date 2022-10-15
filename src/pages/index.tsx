@@ -1,14 +1,14 @@
 import { bannersMock } from "src/components/Banner/mock";
+import CardsList from "src/components/CardsList";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
-import ProfileMenu from "src/components/ProfileMenu";
-import Home from "src/templates/Home";
+import { paymentOptionsMock } from "src/components/PaymentOptions/mock";
 import { HomeTemplateProps } from "src/templates/Home/types";
 
 export default function Index(props: HomeTemplateProps) {
   //  return <Home {...props} />;
-  return <ProfileMenu />;
+  return <CardsList cards={paymentOptionsMock} />;
 }
 
 //ATENÇÃO
