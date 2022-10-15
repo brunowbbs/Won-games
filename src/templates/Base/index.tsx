@@ -6,19 +6,19 @@ import { BaseTemplateProps } from "./types";
 import * as S from "./styles";
 
 const Base = ({ children }: BaseTemplateProps) => (
-  <section>
+  <S.Wrapper>
     <Container>
       <Menu />
     </Container>
 
-    {children}
+    <S.Content>{children}</S.Content>
 
     <S.SectionFooter>
       <Container>
         <Footer />
       </Container>
     </S.SectionFooter>
-  </section>
+  </S.Wrapper>
 );
 
 export default Base;

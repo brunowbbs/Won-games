@@ -3,6 +3,7 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
+    z-index: ${theme.layers.menu};
     display: flex;
     align-items: center;
     padding: ${theme.spacings.xsmall} 0;

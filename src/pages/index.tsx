@@ -1,25 +1,12 @@
 import { bannersMock } from "src/components/Banner/mock";
-import Gallery from "src/components/Gallery";
-import { galleryMock } from "src/components/Gallery/mock";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
+import Home from "src/templates/Home";
 import { HomeTemplateProps } from "src/templates/Home/types";
 
-// export default function Index(props: HomeTemplateProps) {
-//   return <Home {...props} />;
-// }
-
-const args = {
-  items: galleryMock,
-};
-
 export default function Index(props: HomeTemplateProps) {
-  return (
-    <div style={{ maxWidth: "130rem", margin: "0 auto" }}>
-      <Gallery {...args} />
-    </div>
-  );
+  return <Home {...props} />;
 }
 
 //ATENÇÃO
