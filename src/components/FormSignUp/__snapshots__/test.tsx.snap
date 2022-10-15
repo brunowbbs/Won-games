@@ -150,7 +150,7 @@ exports[`<FormSignUp /> should render text and link to sign in 1`] = `
       </div>
     </div>
     <button
-      class="sc-bcXHqe PsMiZ"
+      class="sc-bcXHqe cJFkcX"
     >
       <span>
         Sign up now

@@ -79,4 +79,20 @@ describe("<Button/>", () => {
       { modifier: ":hover" }
     );
   });
+
+  it("should handle a disabled button", () => {
+    renderWithTheme(
+      <Button size="small" minimal disabled>
+        Buy Now
+      </Button>
+    );
+
+    expect(screen.getByRole("button", { name: /buy now/i })).toHaveStyleRule(
+      "cursor",
+      "not-allowed",
+      {
+        modifier: ":disabled",
+      }
+    );
+  });
 });

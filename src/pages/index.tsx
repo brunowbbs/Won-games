@@ -4,13 +4,17 @@ import { cartListMock } from "src/components/CarList/mock";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
+import PaymentOptions from "src/components/PaymentOptions";
+import { paymentOptionsMock } from "src/components/PaymentOptions/mock";
 
 // export default function Index(props: HomeTemplateProps) {
 //   return <Home {...props} />;
 // }
 
+const props = [{}];
+
 export default function Index() {
-  return <CartList items={cartListMock} total="R$ 3000,00" />;
+  return <PaymentOptions cards={paymentOptionsMock} handlePayment={() => {}} />;
 }
 
 //ATENÇÃO
