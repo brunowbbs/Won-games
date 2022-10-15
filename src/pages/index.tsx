@@ -2,6 +2,8 @@ import { bannersMock } from "src/components/Banner/mock";
 import Empty from "src/components/Empty";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
+import GameItem from "src/components/GameItem";
+import { gameItemMock } from "src/components/GameItem/mock";
 import { highlightMock } from "src/components/Highlight/mock";
 import Home from "src/templates/Home";
 import { HomeTemplateProps } from "src/templates/Home/types";
@@ -16,7 +18,12 @@ const props = {
 };
 
 export default function Index() {
-  return <Empty {...props} hasLink />;
+  return (
+    <GameItem
+      {...gameItemMock}
+      downloadLink="http://wongames.com/game/download/21312ndasd"
+    />
+  );
 }
 
 //ATENÇÃO
