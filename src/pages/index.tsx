@@ -1,20 +1,14 @@
 import { bannersMock } from "src/components/Banner/mock";
-import CartList from "src/components/CarList";
-import { cartListMock } from "src/components/CarList/mock";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
-import PaymentOptions from "src/components/PaymentOptions";
-import { paymentOptionsMock } from "src/components/PaymentOptions/mock";
+import ProfileMenu from "src/components/ProfileMenu";
+import Home from "src/templates/Home";
+import { HomeTemplateProps } from "src/templates/Home/types";
 
-// export default function Index(props: HomeTemplateProps) {
-//   return <Home {...props} />;
-// }
-
-const props = [{}];
-
-export default function Index() {
-  return <PaymentOptions cards={paymentOptionsMock} handlePayment={() => {}} />;
+export default function Index(props: HomeTemplateProps) {
+  //  return <Home {...props} />;
+  return <ProfileMenu />;
 }
 
 //ATENÇÃO
