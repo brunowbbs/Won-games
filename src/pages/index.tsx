@@ -1,29 +1,16 @@
 import { bannersMock } from "src/components/Banner/mock";
-import Empty from "src/components/Empty";
+import CartList from "src/components/CarList";
+import { cartListMock } from "src/components/CarList/mock";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
-import GameItem from "src/components/GameItem";
-import { gameItemMock } from "src/components/GameItem/mock";
 import { highlightMock } from "src/components/Highlight/mock";
-import Home from "src/templates/Home";
-import { HomeTemplateProps } from "src/templates/Home/types";
 
 // export default function Index(props: HomeTemplateProps) {
 //   return <Home {...props} />;
 // }
 
-const props = {
-  title: "A simple title",
-  description: "A simple description",
-};
-
 export default function Index() {
-  return (
-    <GameItem
-      {...gameItemMock}
-      downloadLink="http://wongames.com/game/download/21312ndasd"
-    />
-  );
+  return <CartList items={cartListMock} total="R$ 3000,00" />;
 }
 
 //ATENÇÃO
