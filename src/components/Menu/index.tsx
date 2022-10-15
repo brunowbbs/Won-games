@@ -20,12 +20,18 @@ const Menu = ({ userName }: MenuProps) => {
       </MediaMatch>
 
       <S.LogoWrapper>
-        <Logo hideOnMobile />
+        <Link href="/" passHref>
+          <a>
+            <Logo hideOnMobile />
+          </a>
+        </Link>
       </S.LogoWrapper>
 
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
-          <S.MenuLink href="#">Home</S.MenuLink>
+          <Link href="/" passHref>
+            <S.MenuLink>Home</S.MenuLink>
+          </Link>
           <S.MenuLink href="#">Explore</S.MenuLink>
 
           {!!userName && (
@@ -64,7 +70,9 @@ const Menu = ({ userName }: MenuProps) => {
           onClick={() => setIsOpen(false)}
         />
         <S.MenuNav>
-          <S.MenuLink href="#">Home</S.MenuLink>
+          <Link href="/" passHref>
+            <S.MenuLink>Home</S.MenuLink>
+          </Link>
           <S.MenuLink href="#">Explore</S.MenuLink>
 
           {!!userName && (

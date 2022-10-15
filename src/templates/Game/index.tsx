@@ -1,8 +1,8 @@
-import Gallery from "src/components/Gallery";
-import GameDetails from "src/components/GameDetails";
-import GameInfo from "src/components/GameInfo";
-import ShowCase from "src/components/ShowCase";
-import TextContent from "src/components/TextContent";
+import Gallery from "../../components/Gallery";
+import GameDetails from "../../components/GameDetails";
+import GameInfo from "../../components/GameInfo";
+import ShowCase from "../../components/ShowCase";
+import TextContent from "../../components/TextContent";
 import Base from "../Base";
 
 import * as S from "./styles";
@@ -20,7 +20,7 @@ const Game = ({
 }: GameTemplateProps) => {
   return (
     <Base>
-      <S.Cover src={cover} role="img" aria-label="cover" />
+      <S.Cover src={cover} role="img" aria-label="cover" teste-id="cover" />
       <S.Main>
         <S.SectionGameInfo>
           <GameInfo {...gameInfo} />
