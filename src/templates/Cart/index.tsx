@@ -18,7 +18,7 @@ const CartTemplate = ({
   total,
   cards,
 }: CartProps) => {
-  const handlePayment = () => ({});
+  const handlePayment = () => {};
 
   return (
     <Base>

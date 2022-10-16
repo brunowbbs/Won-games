@@ -8,7 +8,7 @@ describe("<MediaMatch/>", () => {
   let mobileHeading: Element;
 
   beforeEach(() => {
-    render(
+    const { container } = render(
       <>
         <MediaMatch greaterThan="medium">
           <h1 data-testid="desktop">Desktop</h1>
