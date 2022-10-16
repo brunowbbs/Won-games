@@ -10,7 +10,18 @@ import { HomeTemplateProps } from "src/templates/Home/types";
 
 export default function Index(props: HomeTemplateProps) {
   //  return <Home {...props} />;
-  return <ExplorerSidebar items={explorerSidebarMock} />;
+
+  function handleFilter(values: any) {
+    console.log(values);
+  }
+
+  return (
+    <ExplorerSidebar
+      onFilter={handleFilter}
+      items={explorerSidebarMock}
+      //initialValues={{ windows: true, sort_by: "low-to-high" }}
+    />
+  );
 }
 
 //ATENÇÃO

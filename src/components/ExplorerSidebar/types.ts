@@ -10,6 +10,12 @@ export type ItemProps = {
   fields: Field[];
 };
 
+type Values = {
+  [field: string]: boolean | string;
+};
+
 export type ExplorerSidebarProps = {
   items: ItemProps[];
+  initialValues?: Values;
+  onFilter: (values: Values) => void;
 };

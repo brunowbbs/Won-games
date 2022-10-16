@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import Heading from "../Heading";
@@ -5,16 +7,26 @@ import Radio from "../Radio";
 import * as S from "./styles";
 import { ExplorerSidebarProps } from "./types";
 
-const ExplorerSidebar = ({ items = [] }: ExplorerSidebarProps) => {
+const ExplorerSidebar = ({
+  items,
+  initialValues = {},
+  onFilter,
+}: ExplorerSidebarProps) => {
+  const [values, setValues] = useState(initialValues);
+
+  const handleFilter = () => {
+    onFilter(values);
+  };
+
+  const handleChange = (name: string, value: string | boolean) => {
+    setValues((s) => ({ ...s, [name]: value }));
+  };
+
   return (
     <S.Wrapper>
       {items.map((item, index) => (
-        <div>
-          <Heading
-            key={`explorer-sidebar-${index}`}
-            lineBottom
-            lineColor="secondary"
-          >
+        <div key={`explorer-sidebar-${index}`}>
+          <Heading lineBottom lineColor="secondary">
             {item.title}
           </Heading>
           {item.type === "checkbox" &&
@@ -24,6 +36,8 @@ const ExplorerSidebar = ({ items = [] }: ExplorerSidebarProps) => {
                 name={field.name}
                 label={field.label}
                 labelFor={field.name}
+                isChecked={!!values[field.name]}
+                onCheck={(v) => handleChange(field.name, v)}
               />
             ))}
 
@@ -35,6 +49,8 @@ const ExplorerSidebar = ({ items = [] }: ExplorerSidebarProps) => {
                 name={item.name}
                 label={field.label}
                 labelFor={field.name}
+                defaultChecked={field.name === values[item.name]}
+                onChange={() => handleChange(item.name, field.name)}
               />
             ))}
         </div>
@@ -85,7 +101,7 @@ const ExplorerSidebar = ({ items = [] }: ExplorerSidebarProps) => {
       <Checkbox name="fps" label="FPS" labelFor="fps" />
       <Checkbox name="mmorpg" label="MMORPG" labelFor="mmorpg" /> */}
 
-      <Button fullWidth size="medium">
+      <Button fullWidth size="medium" onClick={handleFilter}>
         Filter
       </Button>
     </S.Wrapper>
