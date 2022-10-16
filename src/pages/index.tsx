@@ -1,5 +1,7 @@
 import { bannersMock } from "src/components/Banner/mock";
 import CardsList from "src/components/CardsList";
+import ExplorerSidebar from "src/components/ExplorerSidebar";
+import { explorerSidebarMock } from "src/components/ExplorerSidebar/mock";
 
 import { gameCardsMock } from "src/components/GameCard/mock";
 import { highlightMock } from "src/components/Highlight/mock";
@@ -8,7 +10,7 @@ import { HomeTemplateProps } from "src/templates/Home/types";
 
 export default function Index(props: HomeTemplateProps) {
   //  return <Home {...props} />;
-  return <CardsList cards={paymentOptionsMock} />;
+  return <ExplorerSidebar items={explorerSidebarMock} />;
 }
 
 //ATENÇÃO
